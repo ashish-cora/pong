@@ -1,6 +1,13 @@
 import turtle
 x = 0
 y = 0
+# pen
+pen = turtle.Turtle()
+pen.speed(0)
+pen.color("white")
+pen.penup()
+pen.hideturtle()
+pen.goto(0, 250)
 
 wn = turtle.Screen()
 wn.title("pong")
@@ -37,13 +44,9 @@ ball.dx = .2
 ball.dy = -.2
 
 def showscore():
-    # pen
-    pen = turtle.Turtle()
-    pen.speed(0)
-    pen.color("white")
-    pen.penup()
-    pen.hideturtle()
-    pen.goto(0, 250)
+
+
+
     pen.clear()
     pen.write("player A:%s" % x + "      player B:%s" % y)
 
@@ -62,6 +65,7 @@ def paddle_a_down():
 
 
 def paddle_b_up():
+
     y = paddle_b.ycor()
     y += 20
     paddle_b.sety(y)
