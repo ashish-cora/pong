@@ -6,4 +6,4 @@
  
 > python pong.py 
 
- ![Pong](https://ibb.co/VHthVBX)
+ ![Pong](https://i.imgur.com/9WOA315.png)
